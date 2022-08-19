@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using GymBooking.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace GymBooking.Data
 {

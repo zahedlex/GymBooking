@@ -16,12 +16,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-
-IServiceCollection services = new ServiceCollection();
-
-    services.AddDefaultIdentity<ApplicationUser>()
-        
-        .AddRoles<IdentityRole>().AddEntityFrameWorkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>()
+    .AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 
 
