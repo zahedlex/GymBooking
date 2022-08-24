@@ -15,6 +15,8 @@ namespace GymBooking.Data
         //context.GymClass.Find(1);
 
         public DbSet<GymClass> GymClass { get; set; }
+       
+        public DbSet<ApplicationUserGymClass> ApplicationUserGymClass { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
