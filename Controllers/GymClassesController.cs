@@ -165,7 +165,7 @@ namespace GymBooking.Controllers
             return (_context.GymClass?.Any(e => e.GymClassId == id)).GetValueOrDefault();
         }
         [Authorize]
-        public async Task<IActionResult> BookingToogle(int? id)
+        public async Task<IActionResult> BookingToggle(int? id)
         {
 
             

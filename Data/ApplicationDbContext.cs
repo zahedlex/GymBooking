@@ -23,6 +23,8 @@ namespace GymBooking.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<ApplicationUserGymClass>()
                 .HasKey(t => new { t.ApplicationUserId, t.GymClassId});
+
+            modelBuilder.Entity<GymClass>().HasQueryFilter(g => g.StartTime > DateTime.Now);
         }
 
 
